@@ -1,0 +1,34 @@
+thành phần private ở lớp cha thì ko thể truy xuất ở lớp con
+kế thừa public: lớp con kế thừa public từ lớp cha thì các thành phần protected của lớp cha trở thành protected của lớp con, các thành phần public của lớp cha trở thành public của lớp con
+kế thừa protected: lớp con kế thừa protected từ lớp cha thì các thành phần protected và public của lớp cha trở thành protected cuae lớp con
+kế thừa private: lớp con kế thừa private từ lớp cha thì các thành phần public và protected của lớp cha trở thành private của lớp con
+
+khái niệm kế thừa
+kế thừa trong lập trình là cách 1 lớp có thể thừa hưởng lại những thuộc tính, phương thức từ 1 lớp khác và sử dụng chúng như là của bản thân mìnhh
+
+một định nghĩa trừu tượng hơn về kế thừa: là 1 đặc điểm của ngôn ngữ lập trình hướng đối tượng dùng để biểu diễn quan hệ đặc biệt hóa tổng quát hóa giữa các lớp
+
+Ưu điểmm
+- cho phép xây dựng 1 lớp mới từ lớp đã có
+	lớp mới gọi là lớp con hay lớp dẫn xuất
+	lớp đã có gọi là lớp cha hay lớp cơ sở
+- cho phép chia sẻ các thông tin chung nhằm tái sử dụng và đồng thời giúp ta dễ dàng nâng cấp, bảo trì
+- định  nghĩa sự tương thích giữa các lớp, nhờ đó ta có thể chuyển kiểu tự động 
+
+phương thức khởi tạo constructor là 1 phương thức đặc biệt được gọi tự động tại thời điểm đối tương được tạo. các hàm khởi tạo có nhiệm vụ khởi tạo thông tin ban đầu cho các đôií tượng thuộc về lớp ngay khi đối tượng được khai báo
+
+phương thức hủy có nhiệm vụ dọn dẹp xác chết của đối tượng khi đối tượng  đi bán muối. nói 1 cách khác, phương thức ghủy có nhiệm vụ thu hồi lại tất cả các tài nguyên đã cấp phát cho đối tượng khi đối tuong75 hết phạm vi hoạt động
+
+
+các đặc điểm quan trọng của lập trình hướng đối tượng
+
+trừu tượng hóa : cách nhìn khái quát hóa về 1 tập các đối tượng có chung các đặc điểm dược quan tâm và bỏ qua những chi tiết ko cần thiết
+đóng gói nhóm những gì có liên quan với nhau vào làm 1 , để sau này có thể dùng 1 cái tên để gọi đến vd các hàm / thủ tục đóng gói các câu lệnh, các đối tượng đóng gói dữ liệu của chúng và các thủ tục có liên quan
+
+thừa kế cho phép 1 lớp d có được các thuộc tính và thao tác của lớp c, như thể các các thuộc tính và thao tac1do91 đadc  định nghĩa ở lớp d
+
+đa hình là cơ chế cho phép 1 tên thao tác hoặc thuộc tính có thể dc định nghĩa ở nhiều lớp và có thể có nhiều cài dặt khác nhau tại mổi trong các lớp đó
+
+phương thức khởi tạo mặc định là phương thức thiết lập các thông tin ban đầu cho đối tượng thuộc về lớp bằng các giá trị mặc định. khi sử dụng 1 constructor, nếu ko có giá trị khởi tạo do ng dùng cung cấp dc truyền cho constructor thì constructor mặc ding95 sẽ dc gọi
+
+đoạn chương trình trên có lỗi vì thiếu từ khóa dẫn xuất (ở đây là public để cho hàm thành phần trong nó có thể truy xuất dc trong hàm main) thiếu các hàm khởi tạo( hàm khởi tạo mặc định và hàm khởi tạo nhận tham số đầu vào
